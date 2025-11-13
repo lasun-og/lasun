@@ -49,7 +49,7 @@ while True:
 
     if ch == 1:
         customerId = input("ENTER CUSTOMER ID: ")
-        callTime = input("ENTER CALL TIME (in minutes): ")
+        callTime = int(input("ENTER CALL TIME (in minutes): "))   # FIXED INPUT TYPE
         addCall(customerId, callTime)
 
     elif ch == 2:
@@ -67,4 +67,3 @@ while True:
 
     else:
         print("INVALID CHOICE!!!!\n")
-
